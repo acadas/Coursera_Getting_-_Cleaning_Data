@@ -1,0 +1,25 @@
+
+Code Book
+
+References:
+Original data source: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . 
+Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+R-program:
+
+Run "run_analysis.R" to clean up the data. Steps given below.
+
+  1. Merging the training and test datasets (i.e. train/X_train.txt with test/X_test.txt; train/subject_train.txt with test/subject_test.txt; train/y_train.txt with test/y_test.txt)
+
+  2. Reading features.txt and extracting only the measurements on the mean and standard deviation for each measurement.
+
+  3. Reading activity_labels.txt and appling descriptive activity names to name the activities in the data set, such as walking,walkingupstairs,
+     walkingdownstairs, sitting, standing and laying
+
+  4. labelling dataset -attributes & activity to lower case (underscores and brackets removed).
+
+  5. Saving result as 'merged_clean_data.txt' 
+  
+  6. Creating an independent tidydata set with the average of each measurement for each activity and each subject, saving as dataset_average.
+
+....end of the file.
